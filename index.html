@@ -21,6 +21,8 @@
     <style>
         @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
     </style>
+
+    <title> Uidd || Hw1 </title>
 </head>
 <body>
     <div class="container-fluid" id = "home"  >
@@ -44,24 +46,73 @@
     <div class="container-fluid" id = "second">
         <div class="row" id = "second_row">
             <div class="col-md-4" >
-                <img class = "clickCusor" id = "traditionalFood" src = "images/1.png"><br>
-                <label>傳統小吃</label>
+                <div class = "view view-tenth">
+                    <img src = "images/1.png"><br>
+                    <label>今日傳統小吃</label>
+
+                    <div class="mask" id = "mask_1">  
+                        <h2>鄭記土魠魚羹</h2>  
+                        <p>地址：xxxxxxx
+                        <br>推薦：xxxxxx
+                        <br>說明：超好吃 吧？
+                        </p>  
+                        <a href="#second" class="info">準備吃吃吃</a>  
+                    </div> 
+                </div>
             </div>
             <div class="col-md-4">
-                <img class = "clickCusor" src = "images/2.png"></img><br>
-                <label>特色小店</label>
+                <div class = "view view-tenth">
+                    <img src = "images/2.png"><br>
+                    <label>今日特色小店</label>
+
+                    <div class="mask" id = "mask_2">  
+                        <h2>孟澤的愛店</h2>  
+                        <p>超級無敵棒</p>  
+                        <a href="#second" class="info">特色大追擊</a>  
+                    </div> 
+                </div>
             </div>
             <div class="col-md-4">
-                <img class = "clickCusor" src = "images/3.png"></img><br>
-                <label>繼續闖關</label>
+                <div class = "view view-tenth">
+                    <img src = "images/3.png"><br>
+                    <label>繼續闖關</label>
+
+                    <div class="mask" id = "mask_3">  
+                        <h2>1：新手的試煉</h2>  
+                        <p>位置：新手村
+                        <br>說明：懷抱著成為美食王的你，開始了第一趟旅程...
+                        </p>  
+                        <a href="#third" class="info">Fighting Go!</a>  
+                    </div> 
+                </div>
             </div>
         </div>
     </div>
 
     <div id = "third" class = "container-fluid">
         <div class = "row" >
-            <div class = "col-md-7">各種按鈕</div>
-            <div class = "col-md-5">解釋</div>
+            <div class = "col-md-7 row">
+                <div id = "third_img_back"> <img src = "images/3.png"> </div>
+
+                <div><button class="ui inverted button active">第一關：美食家的土魠魚羹</button></div>
+
+                <div><button class="ui inverted olive button">第二關：Locked!</button></div>
+
+                <div><button class="ui inverted yellow button">第三關：Locked!</button></div>
+
+                <div><button class="ui inverted red button">魔王關：你還沒資格呢!哼！</button></div>
+
+            </div>
+            <div class = "col-md-5">
+                <div id = "third_r_back">
+                    <div id = "third_r_img"><img src = "images/12.jpg"></div>
+                    <h2>鄭記土魠魚羹</h2>
+                    <p>難易度：應該不難吧
+                    <br>地址：awjsobowje
+                    <br>任務說明：吃一碗土魠魚羹，然後找一個路人一起拍照。</p>
+
+                </div>
+            </div>
         </div>
     </div>
 

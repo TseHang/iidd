@@ -1,4 +1,4 @@
-$('#traditionalFood').on('click',function(e){
+$('#mask_3').on('click',function(e){
 
 	$('#third').css("display","block");
 
@@ -14,3 +14,7 @@ $('#submit_button').on('click',function(){
 $('#noAccount_button').on('click',function(){
 	window.alert("Are u crazy ? Shit!");
 });
+
+function alert(){
+	window.alert("Shit! 這還沒好～～");
+}
