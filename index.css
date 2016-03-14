@@ -1,3 +1,99 @@
-body {
-  color:red;
+html {
+	font-family: Helvetica, "Helvetica Neue", Arial, "Heiti SC", "Microsoft JhengHei", "微軟正黑體", "Microsoft Yahei", "微軟雅黑", sans-serif; 
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+
+	padding-top: 0;
+
+}
+body{
+  padding:0;
+  margin:0;
+}
+
+.row {
+	text-align: center;
+}
+
+#home{
+	background-image: url("images/bg.jpg");
+	background-attachment: fixed;
+	background-position: center 0;
+	background-size: cover;
+	height: 95vh;
+
+}
+#home_welcome{
+	height:35vh;
+	padding:0;
+  	margin:0;
+	font-family: 'Shadows Into Light', cursive;
+	text-align: center;
+}
+
+#home_welcome p{
+	color: #FFE21F;
+	font-size: 5em;
+	position: relative;
+	top:2.5em;
+	left:0em;
+}
+#home_content_box{
+	margin: auto;
+	border-radius: 30px;
+	text-align: center;
+
+	color:white;
+	background-color: rgba(30,30,30,0.5);
+	
+	height:40vh;
+	width:80vw;
+
+}
+div #home_log{
+	line-height: 3em;
+	padding-top: 3em;
+}
+
+#home_log label{
+	text-align: left;
+}
+
+#second{
+	height:70vh;
+	background-color: rgba(100,100,88,0.16);
+}
+
+img.clickCusor{
+   cursor: pointer;
+}
+
+#second_row div{
+	margin:auto;
+	margin-top: 3em;
+}
+
+#second_row label{
+	font-size: 1.5em;
+}
+
+#third{
+	display: none;
+
+	height:90vh;
+	background-image: url("images/bg.jpg");
+	background-attachment: fixed;
+	background-position: center 0;
+	background-size: cover;
+
+	color:white;
+}
+#third_back{
+	background-color: rgba(20,20,20,0.4);
+}
+
+@media screen and (max-width:990px){
+	#second{
+		height: inherit;
+	}
 }

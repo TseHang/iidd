@@ -1,8 +1,70 @@
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-	<link href = "index.css" rel = "stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Firebase -->
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <!-- jquery -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/button.min.css">
+    <link type="text/css" rel="stylesheet" href="index.css">
+    
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+    </style>
 </head>
 <body>
-I finished!
+    <div class="container-fluid" id = "home"  >
+        <div id = "home_welcome">
+            <p >Hey Welcome ! Let's playing !</p>
+        </div>
+        
+        <div id = "home_content_box">
+            <div id = "home_log">
+                <label>Name:<input class="form-control" type='text' id='nameInput' placeholder='Name'></label><br>
+                <label>From:<input class="form-control" type='text' id='nameInput' placeholder='From'></label><br>
+                    
+                <div id = "form_button_div">
+                    <button class="ui inverted yellow basic button" id = "submit_button" type="button">Log in.</button>
+                    <button class="ui inverted red basic button" id = "noAccount_button" type="button">No account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id = "second">
+        <div class="row" id = "second_row">
+            <div class="col-md-4" >
+                <img class = "clickCusor" id = "traditionalFood" src = "images/1.png"><br>
+                <label>傳統小吃</label>
+            </div>
+            <div class="col-md-4">
+                <img class = "clickCusor" src = "images/2.png"></img><br>
+                <label>特色小店</label>
+            </div>
+            <div class="col-md-4">
+                <img class = "clickCusor" src = "images/3.png"></img><br>
+                <label>繼續闖關</label>
+            </div>
+        </div>
+    </div>
+
+    <div id = "third" class = "container-fluid">
+        <div class = "row" >
+            <div class = "col-md-7">各種按鈕</div>
+            <div class = "col-md-5">解釋</div>
+        </div>
+    </div>
+
 </body>
+<script type="text/javascript" src = "index.js"></script>
 </html>
