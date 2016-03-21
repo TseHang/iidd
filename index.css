@@ -10,19 +10,14 @@ body{
   padding:0;
   margin:0;
 }
-
 .row {
 	text-align: center;
 }
 
 #home{
-	background-image: url("images/bg.jpg");
-	background-attachment: fixed;
-	background-position: center 0;
-	background-size: cover;
 	height: 95vh;
-
 }
+
 #home_welcome{
 	height:35vh;
 	padding:0;
@@ -32,10 +27,10 @@ body{
 }
 
 #home_welcome p{
-	color: #FFE21F;
-	font-size: 5em;
+	color: #FFF000;
+	font-size: 7em;
 	position: relative;
-	top:2.5em;
+	top:1.5em;
 	left:0em;
 }
 #home_content_box{
@@ -56,6 +51,84 @@ div #home_log{
 }
 
 #home_log label{
+	text-align: left;
+}
+
+.cb-slideshow,
+.cb-slideshow:after { 
+    position: absolute;
+    width: 100%;
+    height: 95vh;;
+    top: 0px;
+    left: 0px;
+    z-index: -1; 
+    padding:0;
+    background-color: black;
+}
+
+.cb-slideshow li span { 
+    width: 100%;
+    height: 100%; 
+    opacity: 0; 
+    position: absolute;
+    background-position: center 0;
+    background-attachment: fixed; 
+    background-size: cover; 
+    animation: imageAnimation 24s linear infinite; 
+}
+
+@keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	6% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	}
+	18% {
+	    opacity: 1;
+	    animation-timing-function: ease-out;
+	    background-position: center 0;
+	}
+	25% {
+		transform: scale(1.1) ;
+	}
+	28% {
+		background-position: center 400%;
+	    opacity: 0;
+	}
+	100% { opacity: 0}
+}
+
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+
+.cb-slideshow li:nth-child(1) span { 
+    background-image: url(images/bg.jpg) ;
+}
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url(images/01.jpg);
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) span { 
+    background-image: url(images/02.jpg);
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) span { 
+    background-image: url(images/03.jpg);
+    animation-delay: 18s; 
+}
+
+#noAccount_input{
+	text-align: left;
+}
+.modal-content{
+	background-color: #F5F5F5;
+	text-align: center;
+}
+.modal-body label{
 	text-align: left;
 }
 

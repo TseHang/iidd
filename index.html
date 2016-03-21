@@ -25,22 +25,51 @@
     <title> Uidd || Hw1 </title>
 </head>
 <body>
+
     <div class="container-fluid" id = "home"  >
-        <div id = "home_welcome">
-            <p >Hey Welcome ! Let's playing !</p>
+        <div id = "home_welcome" >
+            <p >Hey Welcome !</p>
         </div>
-        
+
         <div id = "home_content_box">
             <div id = "home_log">
                 <label>Name:<input class="form-control" type='text' id='nameInput' placeholder='Name'></label><br>
-                <label>From:<input class="form-control" type='text' id='nameInput' placeholder='From'></label><br>
+                <label>PASSWORD:<input class="form-control" type='text' id='psdInput' placeholder='Password'></label><br>
                     
                 <div id = "form_button_div">
                     <button class="ui inverted yellow basic button" id = "submit_button" type="button">Log in.</button>
-                    <button class="ui inverted red basic button" id = "noAccount_button" type="button">No account</button>
+                    <button class="ui inverted red basic button" id = "noAccount_button" type="button" data-toggle="modal" data-target="#myModal" >No account</button>
                 </div>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Sign Up Your Account</h4>
+              </div>
+              <div class="modal-body">
+                <label>Name:<input class="form-control" type='text' id='sign_nameInput' placeholder='Name'></label><br>
+                <label>From:<input class="form-control" type='text' id='sign_fromInput' placeholder='From'></label><br>
+                <label>PASSWORD:<input class="form-control" type='text' id='sign_psdInput' placeholder='Password'></label><br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" id = "button_sign" class="btn btn-primary">Sign Up!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="cb-slideshow">
+            <li><span> Image 01 </span></li>
+            <li><span> Image 02 </span></li>
+            <li><span> Image 03 </span></li>
+            <li><span> Image 04 </span></li>
+        </ul>
     </div>
 
     <div class="container-fluid" id = "second">
